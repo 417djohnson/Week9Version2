@@ -1,0 +1,123 @@
+<!--TO DO: Create a new website using HTML and Bootstrap. The website must include the following: -->
+<!--* At least 2 pages, a Bootstrap NavBar, table and form -->
+<!--*Bootstrap grid used throughout to format elements -->
+<!--*Elements should stack vertically when the window is small -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Denise Johnson">
+    <title>Whiskey & Wine - My Bootstrap Project</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="styles.css">
+
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Whiskey River</a>
+         
+          <!--HAMBURGER BUTTON-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="brands.html">Brands</a>
+              </li>
+            </ul>
+          
+            <form action="/action_page.php" class="was-validated">
+              <div class="mb-3 mt-3">
+                <label for="uname" class="form-label">Sign up for our newsletter:</label>
+                <input type="text" class="form-control" id="uname" placeholder="Enter email" name="email" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+          </div>
+        </div>
+      </nav>
+      <!--END NAVBAR-->
+
+      <!--Welcome page-->
+      <div>
+        <img class="mx-auto d-block" src="images/heroimage.png"  alt='Whiskey image'>
+      </div>
+      <h1 class="text-center p-1">Welcome to Whiskey River!</h1>
+      <h2 class="text-center p-1">The premier whiskey tasting center of the Ozarks.</h2>
+      <h4 class="text-center p-1">Stop by for a friendly smile and some quality products.</h3>
+      <p class="text-center p-1">We’re conveniently located at 711 N 20th St in Ozark, Missouri.</p>
+      
+      <!--IMAGE GALLERY-->
+      
+       
+<div class="row">
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    <img
+      src="images/whiskey1.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+
+    <img
+      src="images/whiskey2.png"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="images/whiskey3.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Jameson Black Barrel"
+    />
+
+    <img
+      src="images/Whiskey4.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="images/whiskey7.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Waves at Sea"
+    />
+
+    <img
+        src="images/whiskey6.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Waves at Sea"
+      />
+
+    
+  </div>
+</div>
+
+
+
+
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
+</body>
+</html>
